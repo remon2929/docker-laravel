@@ -37,3 +37,47 @@ mbind: Operation not permitted
 2020-07-07T14:02:17.353086+09:00 0 [System] [MY-010232] [Server] XA crash recovery finished.
 2020-07-07T14:02:17.513320+09:00 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
 2020-07-07T14:02:17.625537+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.20'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2020-07-07T15:10:49.085972+09:00 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2020-07-07T15:10:49.086242+09:00 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.20) starting as process 1
+2020-07-07T15:10:49.146586+09:00 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-07-07T15:10:50.410061+09:00 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-07-07T15:10:50.944739+09:00 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2020-07-07T15:10:51.027562+09:00 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-07-07T15:10:51.106115+09:00 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-07-07T15:10:51.244483+09:00 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-07-07T15:10:51.442982+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.20'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2020-07-07T20:17:45.619463+09:00 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2020-07-07T20:17:45.619657+09:00 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.20) starting as process 1
+2020-07-07T20:17:45.671233+09:00 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-07-07T20:17:46.718629+09:00 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-07-07T20:17:47.427270+09:00 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2020-07-07T20:17:47.509033+09:00 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-07-07T20:17:47.594871+09:00 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-07-07T20:17:47.700244+09:00 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-07-07T20:17:47.810348+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.20'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2020-07-07T20:24:09.320760+09:00 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.20)  MySQL Community Server - GPL.
+2020-07-07T20:24:12.143887+09:00 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2020-07-07T20:24:12.144038+09:00 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.20) starting as process 1
+2020-07-07T20:24:12.174499+09:00 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-07-07T20:24:12.578552+09:00 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-07-07T20:24:12.974988+09:00 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2020-07-07T20:24:13.124929+09:00 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-07-07T20:24:13.203589+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.20'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2020-07-07T20:29:15.213170+09:00 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2020-07-07T20:29:15.213317+09:00 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.20) starting as process 1
+2020-07-07T20:29:15.270693+09:00 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-07-07T20:29:16.438081+09:00 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-07-07T20:29:17.199450+09:00 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2020-07-07T20:29:17.298839+09:00 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-07-07T20:29:17.386788+09:00 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-07-07T20:29:17.517532+09:00 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-07-07T20:29:17.644654+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.20'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2020-07-08T09:59:03.079558+09:00 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+2020-07-08T09:59:03.079736+09:00 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.20) starting as process 1
+2020-07-08T09:59:03.128216+09:00 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2020-07-08T09:59:04.129588+09:00 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2020-07-08T09:59:04.657703+09:00 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2020-07-08T09:59:04.734058+09:00 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2020-07-08T09:59:04.812177+09:00 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2020-07-08T09:59:04.905507+09:00 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2020-07-08T09:59:05.017611+09:00 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.20'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.

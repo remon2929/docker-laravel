@@ -19,4 +19,8 @@
             </tr>
         @endforeach
     </table>
+
+    <div>
+        <a href={{ route('shop.new') }} class='btn btn-outline-primary'>新しいお店</a>
+    <div>
 @endsection
