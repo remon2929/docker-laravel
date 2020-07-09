@@ -6,6 +6,8 @@ use App\Shop;
 use App\Category;
 use Illuminate\Http\Request;
 
+
+
 class ShopController extends Controller
 {
     public function __construct()
@@ -19,7 +21,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        $shops = Shop::all();
+        $shops = Shop::paginate(5);
         return view('index', ['shops' => $shops]);
     }
 
