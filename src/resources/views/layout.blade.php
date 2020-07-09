@@ -39,13 +39,13 @@
                             @endif
                         @else
 
-                        <li class="nav-item">
-
-  
+                        <li class="nav-item">  
                                 <a class="nav-link" href="#"  >
                                     {{ Auth::user()->name }} 
                                 </a>
-
+                                </li>
+                                
+                                <li class="nav-item" >
                                 <div class="nav-item">
                                     <a class="nav-link" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
