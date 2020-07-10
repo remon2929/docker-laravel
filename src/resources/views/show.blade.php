@@ -15,20 +15,34 @@
     frameborder='0'>
     </iframe>
 
+    <h2>Comments</h2>
+<ul>
+  @foreach ($shop->comments as $comment)
+  <li>{{ $comment->body }}</li>
+ 
+  @endforeach
+</ul>
 
-<div>
-<a href="{{ route('shop.list') }}">一覧に戻る</a>
-    @auth 
-    @if ($shop->user_id === $login_user_id)
-    <a href="{{ route('shop.edit', ['id' => $shop->id]) }}">編集</a>
-    <p>
-    {{ Form::open(['method' => 'delete', 'route' => ['shop.destroy', $shop->id]]) }}
-                {{ Form::submit('削除') }}
-            {{ Form::close() }}
-            @endif
-            @endauth
-</p>
-</div>
+    <h2>Add New Comment</h2>
+<form method="post" action="{{ action('CommentsController@store', $shop->id) }}">
+  {{ csrf_field() }}
+  <p>
+    <input type="text" name="body" placeholder="body" value="{{ old('body') }}">
+    @if ($errors->has('body'))
+    <span class="error">{{ $errors->first('body') }}</span>
+    @endif
+  </p>
+
+  <input
+        name="shop_id"
+        type="hidden"
+        value="{{ $shop->id }}"
+    >
+  <p>
+    <input type="submit" value="Add Comment">
+  </p>
+</form>
+
 
 @endsection
 
