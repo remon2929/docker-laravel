@@ -21,7 +21,7 @@ Route::post('/shop/update/{id}', 'ShopController@update')->name('shop.update');
 Route::get('/shop/{id}', 'ShopController@show')->name('shop.detail');
 Route::delete('/shop/{id}', 'ShopController@destroy')->name('shop.destroy');
 
-
+Route::resource('comments', 'CommentsController', ['only' => ['store']]);
 
 Route::get('/', function () {
     return redirect('shops');
