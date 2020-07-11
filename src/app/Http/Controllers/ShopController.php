@@ -19,10 +19,18 @@ class ShopController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $shops = Shop::paginate(5);
-        return view('index', ['shops' => $shops]);
+        if ($request->filled('keyword')) {
+            $keyword = $request->input('keyword');
+            $message = 'Welcome my BBS: ' . $keyword;
+            $shops = Shop::where('address', 'like', '%' . $keyword . '%')->paginate(5);
+        } else {
+            $message = 'Welcome my BBS';
+            $shops = Shop::paginate(5);
+        }
+
+        return view('index', ['message' => $message, 'shops' => $shops]);
     }
 
     /**
