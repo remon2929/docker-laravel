@@ -1,6 +1,8 @@
 @extends('layout')
 
 @section('content')
+{{ $message }}
+@include('search')
     <h1>お店一覧</h1>
     <table class='table table-striped table-hover'>
         <tr>
@@ -20,7 +22,7 @@
         @endforeach
     </table>
 <div>
-{{ $shops->links() }}
+{{ $shops->appends(request()->input())->links() }}
 </div>
 
 @auth
