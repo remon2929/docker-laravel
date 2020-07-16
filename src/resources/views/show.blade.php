@@ -15,7 +15,7 @@
     frameborder='0'>
     </iframe>
 
-    <h2>Comments</h2>
+    <h2>コメント</h2>
 <ul>
   @foreach ($shop->comments as $comment)
   <li>{{ $comment->body }}</li>
@@ -23,7 +23,7 @@
   @endforeach
 </ul>
 
-    <h2>Add New Comment</h2>
+    <h2>コメントを書く</h2>
 <form method="post" action="{{ action('CommentsController@store', $shop->id) }}">
   {{ csrf_field() }}
   <p>
@@ -42,6 +42,12 @@
     <input type="submit" value="Add Comment">
   </p>
 </form>
+
+
+
+
+<p><img src="{{ asset('/storage/'.$shop->image)}}"></p>
+
 
 
 @endsection

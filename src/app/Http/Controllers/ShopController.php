@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Shop;
 use App\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 
 
@@ -53,15 +54,21 @@ class ShopController extends Controller
      */
     public function store(Request $request)
     {
+
+   
         $shop = new Shop;
         $user = \Auth::user();
 
         $shop->name = request('name');
         $shop->address = request('address');
         $shop->category_id = request('category_id');
+        $filename = $request->file('thefile')->getClientOriginalName();
+        $shop->image = $filename;
+         $request->file('thefile')->storeAs('public', $filename);
+       
         $shop->user_id = $user->id;
         $shop->save();
-        return redirect()->route('ShopController@store', ['id' => $shop->id]);
+        return redirect()->route('shop.detail', ['id' => $shop->id]);
     }
 
     /**
@@ -70,7 +77,7 @@ class ShopController extends Controller
      * @param  \App\Shop  $shop
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request,$id,Shop $shop)
     {
         $shop = Shop::find($id);
         $user = \Auth::user();
@@ -79,6 +86,10 @@ class ShopController extends Controller
         }else{
             $login_user_id = '';
         }
+        
+        Storage::disk('local')->exists('public/storage/'.$shop->image);
+        
+
         return view('show', ['shop' => $shop, 'login_user_id' =>$login_user_id]);
     }
 

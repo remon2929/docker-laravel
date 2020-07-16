@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>新しいお店</h1>
-    {{ Form::open(['route' => 'shop.store']) }}
+    {{ Form::open(['route' => 'shop.store', 'files' => true]) }}
         <div class='form-group'>
             {{ Form::label('name', '店名:') }}
             {{ Form::text('name', null) }}
@@ -15,6 +15,11 @@
             {{ Form::label('category_id', 'カテゴリ:') }}
             {{ Form::select('category_id', $categories) }}
         </div>
+
+        <div class="form-group">
+        {{Form::file('thefile')}}
+        </div>
+
         <div class="form-group">
             {{ Form::submit('作成する', ['class' => 'btn btn-outline-primary']) }}
         </div>
