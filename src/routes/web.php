@@ -23,6 +23,9 @@ Route::delete('/shop/{id}', 'ShopController@destroy')->name('shop.destroy');
 
 Route::resource('comments', 'CommentsController', ['only' => ['store']]);
 
+Route::get('login/twitter', 'Auth\LoginController@redirectToProvider')->name('login.twitter');
+Route::get('login/twitter/callback', 'Auth\LoginController@handleProviderCallback');
+
 Route::get('/', function () {
     return redirect('shops');
 });
